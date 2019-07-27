@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'ui/thema/indexthema.dart';
 import 'ui/configurationGame/indexConfig.dart';
+import 'ui/mapGame/uploadMap.dart';
+import 'ui/mapGame/endPage.dart';
+import 'widget/setGameLocation.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,7 +33,12 @@ class MyApp extends StatelessWidget {
           
           child: HomePage())
        */
-        '/screenConfigGame' : (BuildContext context) => new ConfigurationGame(),
+
+        '/screenConfigGame' : (BuildContext context) => new ConfigurationGame(name: 'toto'), 
+        '/screenUploadMap' : (BuildContext context) => new UploadMap(), // UploadMap()
+        '/screenEnd' : (BuildContext context) => new EndPage(), // UploadMap()
+        '/screenSetGameLocation' : (BuildContext context) => new SetGameLocation(), // screenSetGameLocation
+        '/screenSaveGame' : (BuildContext context) => new SaveGame(), // SaveGame
       },
       //initialRoute: Constants.SPLASH_SCREEN,
       home: DisplayAllThema(title: 'Flutter Demo Home Page'),

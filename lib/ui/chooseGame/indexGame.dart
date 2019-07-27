@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../widget/unitGameToChoose.dart';
-import '../mapGame/uploadMap.dart';
+import '../../widget/unitGameToChoose.dart'; //
 
 
 class ChooseGame extends StatelessWidget {
@@ -8,21 +7,23 @@ class ChooseGame extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      
+      appBar: AppBar(
+        title: Text("Jeu de piste"),
+        backgroundColor: Colors.black,
+        bottomOpacity: 0.5,
+      ),
       body: 
           Stack(
-              children: <Widget>[ 
-                              
-                  new UnitGameToChoose(name: "QCM"), //HomePage()//
-                  new UnitGameToChoose(name: "PUZZLE"), //HomePage()//
-                  new UnitGameToChoose(name: "DRAGON"), //HomePage()//
+              children: <Widget>[               
+                  UnitGameToChoose(),  
                   Container(
                     width: 200, //MediaQuery.of(context).size.width * 0.8,
                     height: 200, //MediaQuery.of(context).size.height * 0.8,
                     alignment: Alignment.center,
                     //padding: EdgeInsets.only(top: 50.0),
-                    margin: EdgeInsets.only(top: 250.0, left: 50),
+                    margin: EdgeInsets.only(top: 150.0, left: 50),
                     decoration: new BoxDecoration(
                     border: new Border.all(
                         color: Colors.black38,
@@ -36,13 +37,12 @@ class ChooseGame extends StatelessWidget {
                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal, color: Colors.black38),
                       ),
                   ),
-                  
-             
+
                  ],
           ),
           floatingActionButton: FloatingActionButton.extended(
                   onPressed: () {
-                          UploadMap();
+                          Navigator.of(context).pushNamed('/screenUploadMap');
                         },
                   label: Text(
                       'Terminer',
@@ -58,4 +58,5 @@ class ChooseGame extends StatelessWidget {
   
   }
 }
+
 
