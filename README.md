@@ -1,5 +1,9 @@
-# margot
+# Margot
 CMS pour jeu de piste Tally.
+
+***
+Vidéo démo. :
+https://drive.google.com/file/d/1FJHZWiCVBztt9L6UP6CwD1iiLZnqH8ML/view?usp=sharing
 
 A new Flutter project.
 
