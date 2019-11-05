@@ -1,4 +1,5 @@
 # margot
+CMS pour jeu de piste Margot.
 
 A new Flutter project.
 
