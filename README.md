@@ -1,5 +1,5 @@
 # margot
-CMS pour jeu de piste Margot.
+CMS pour jeu de piste Tally.
 
 A new Flutter project.
 
