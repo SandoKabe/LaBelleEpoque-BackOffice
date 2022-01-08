@@ -1,5 +1,5 @@
 # Margot
-CMS pour jeu de piste Tally.
+CMS pour jeu de piste La Belle Epoque.
 
 ***
 Vidéo démo. :
